@@ -762,7 +762,7 @@ int WebRtcNs_InitCore(NoiseSuppressionC *self, uint32_t fs) {
         return -1;
     }
     // Initialization of struct.
-    if (fs == 8000 || fs == 16000) {
+    if (fs == 8000 || fs == 16000 || fs == 32000 || fs == 48000) {
         self->fs = fs;
     } else {
         return -1;
